@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.27.13.1:3306/public
+    username: root
+    password: kissyou012
+  jpa:
+    hibernate:
+      #ddl-auto: create 每次启动根据实体类进行重建表
+      ddl-auto: update
+    show-sql: true
